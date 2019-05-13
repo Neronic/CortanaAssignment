@@ -1,0 +1,18 @@
+"In List Application,"
+
+Sort by: 
+location, city, place
+Sex
+Age
+Last Name
+First Name
+Favourite Colour
+
+How many people live in: 
+location_name
+
+Count the number of:
+Males, Men, Boys
+Females, Women, Girls
+
+Who is my best friend?

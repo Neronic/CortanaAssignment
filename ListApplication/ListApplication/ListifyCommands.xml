@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<VoiceCommands xmlns="http://schemas.microsoft.com/voicecommands/1.2">
+  <CommandSet xml:lang="en-us" Name="ListifyCommandSet_en-us">
+    <CommandPrefix> List Application </CommandPrefix>
+    <Example>Try to sort </Example>
+
+    <!-- SORT BY Commands -->
+    <Command Name="sortByLocation">
+      <Example> sort by location </Example>
+      <ListenFor>sort [by] location </ListenFor>
+      <ListenFor>sort [by] city</ListenFor>
+      <ListenFor>sort [by] place</ListenFor>
+      <Feedback>Sorting by place </Feedback>
+      <Navigate/>
+    </Command>    
+
+    <Command Name="countTheAmount">
+      <Example> Count the number of men</Example>
+      <ListenFor>Count [the] number of {countItem}</ListenFor>
+      <ListenFor>How many {countItem} are there</ListenFor>
+      <Feedback>Counting Item</Feedback>
+      <Navigate/>
+    </Command>
+
+    <Command Name="howMany">
+      <Example>How many people live in Toronto </Example>
+      <ListenFor>How many people live in {place}</ListenFor>
+      <Feedback>Checking...</Feedback>
+      <Navigate/>
+    </Command>
+
+    <Command Name="omniSort">
+      <Example>Sort by sex</Example>
+      <ListenFor>Sort [by] {sortItem}</ListenFor>
+      <Feedback>Sorting list</Feedback>
+      <Navigate/>
+    </Command>
+
+    <Command Name="bestFriend">
+      <Example> Who is my best friend </Example>
+      <ListenFor> Who is my best friend </ListenFor>
+      <Feedback>Checking...</Feedback>
+      <Navigate/>
+    </Command>
+    
+    <PhraseList Label="countItem">
+      <Item>Males</Item>
+      <Item>Men</Item>
+      <Item>Boys</Item>
+      <Item>Females</Item>
+      <Item>Girls</Item>
+      <Item>Women</Item>
+    </PhraseList>
+
+    <PhraseList Label="place">
+      <Item>Blenheim</Item>
+      <Item>Toronto</Item>
+      <Item>Kitchener</Item>
+      <Item>London</Item>
+      <Item>Welland</Item>
+      <Item>Caledonia</Item>
+      <Item>Windsor</Item>
+    </PhraseList>
+
+    <PhraseList Label="sortItem">
+      <Item>Age</Item>
+      <Item>Sex</Item>
+      <Item>LastName</Item>
+      <Item>FirstName</Item>
+      <Item>FavouriteColor</Item>
+    </PhraseList>
+
+  </CommandSet>
+</VoiceCommands>
